@@ -64,13 +64,11 @@ def summarize():
         content_to_summarize = user_input
 
     prompt = f"""
-    Write a draft news story for publication on https://circuit.news. Your response should include:
+    Write a 3–5 paragraph news-style draft article suitable for publication on https://circuit.news. Use a clear and engaging headline that reflects the news value. The article should include key facts, reporting details, and context that would be relevant to a readership focused on business in the Middle East, sovereign wealth funds, diplomacy, and regional strategy.
 
-    - A clear, engaging headline
-    - A 2-5 paragraph article written in a professional, informative tone
-    - Relevant context and important details for readers interested in business developments in the Middle East, sovereign wealth funds (SWFs), regional investments, and financial diplomacy
+    Avoid bullet points or numbering. Use a professional journalistic tone with concise, factual writing. The final paragraph(s) should include a section labeled "Why it matters" that explains the broader implications of the story for readers in the region or those following economic and political trends.
 
-    Base the article on the following source content:
+    Here is the source content:
     {content_to_summarize}
     """
 
