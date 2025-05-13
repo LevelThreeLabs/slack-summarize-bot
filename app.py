@@ -64,15 +64,15 @@ def summarize():
         content_to_summarize = user_input
 
     prompt = f"""
-Please generate a concise news-style output from the following content. Your response should be between 2-5 paragraphs and structured as follows:
+    Write a draft news story for publication on https://circuit.news. Your response should include:
 
-1. A clear, engaging headline.
-2. A 1-2 paragraph summary of the article’s main content and reporting.
-3. A final paragraph (or two) labeled “Why it matters:” that gives context and significance — why this story is important, notable, or has broader implications.
+    - A clear, engaging headline
+    - A 2-5 paragraph article written in a professional, informative tone
+    - Relevant context and important details for readers interested in business developments in the Middle East, sovereign wealth funds (SWFs), regional investments, and financial diplomacy
 
-Here is the source content:
-{content_to_summarize}
-"""
+    Base the article on the following source content:
+    {content_to_summarize}
+    """
 
 
     try:
